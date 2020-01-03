@@ -1,0 +1,26 @@
+@@include('./components/header.html', {"title": "Main", "styles": true})
+
+<body id="main-page">
+
+    @@include('./components/fixed_windows.html')
+
+    <div class="wrapper">
+
+        <h1 id="logo"><small>APEX</small> STAT <small>TRAK</small></h1>
+
+        @@include('./components/sidebar.html')
+        @@include('./components/logged_in.html')
+
+        <div id="content">
+
+            @@include('./tabs/home.html')
+            @@include('./tabs/stats.html')
+            @@include('./tabs/settings.html')
+
+        </div>
+
+    </div>
+
+    <div id="app-version">VERSION <small></small></div>
+
+    @@include('./components/footer.html')

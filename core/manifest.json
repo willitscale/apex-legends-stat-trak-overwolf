@@ -1,0 +1,85 @@
+{
+  "manifest_version": "1",
+  "type": "WebApp",
+  "meta": {
+    "name": "ApexStatTrak",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.125.1.0",
+    "author": "Stevethemagey",
+    "icon": "IconMouseOver.png",
+    "icon_gray": "IconMouseNormal.png",
+    "launcher_icon": "desktop-icon.ico",
+    "description": "Real time stats and gear optimisation"
+  },
+  "permissions": [
+    "FileSystem",
+    "Extensions"
+  ],
+  "data": {
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [
+        21566
+      ]
+    },
+    "game_events": [
+      21566
+    ],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [
+            21566
+          ]
+        },
+        "start_minimized": false
+      }
+    ],
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "files/html/background.html",
+        "desktop_only": false,
+        "transparent": false,
+        "resizable": false,
+        "native_window": false,
+        "show_in_taskbar": false,
+        "is_background_page": true,
+        "background_optimization": true
+      },
+      "main": {
+        "file": "files/html/main.html",
+        "desktop_only": true,
+        "transparent": false,
+        "resizable": false,
+        "native_window": true,
+        "size": {
+          "width": 800,
+          "height": 600
+        },
+        "min_size": {
+          "width": 800,
+          "height": 600
+        },
+        "start_position": {
+          "left": 0,
+          "top": 0
+        }
+      }
+    },
+    "externally_connectable": {
+      "matches": [
+        "https://*.google-analytics.com",
+        "https://*.amazonaws.com",
+        "https://*.doubleclick.net"
+      ]
+    },
+    "extra-objects": {
+      "simple-io-plugin": {
+        "file": "files/plugins/simple-io-plugin.dll",
+        "class": "overwolf.plugins.SimpleIOPlugin"
+      }
+    }
+  }
+}

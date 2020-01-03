@@ -1,0 +1,21 @@
+.wrapper {
+    display: block;
+
+    #logo {
+        font-weight: bold;
+        font-size: 2.2em;
+        position: fixed;
+        left: 0px;
+        top: 5px;
+        min-width: 150px;
+        max-width: 150px;
+        text-align: center;
+        z-index: 99999;
+
+            color: $highlight-colour;
+            small {
+                font-size: 0.8em;
+                color: $white;
+            }
+    }
+}

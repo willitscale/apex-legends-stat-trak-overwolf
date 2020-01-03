@@ -1,0 +1,72 @@
+#tabs-stats-content,
+#tabs-home-content {
+  .row {
+    div {
+      div {
+        height: 35vh;
+      }
+    }
+  }
+}
+
+#tabs-stats-content {
+  .rank-wrapper {
+    text-align: center;
+    .rank-img {
+      height: 60%;
+    }
+    .rank-text {
+      color: $colour-highlight-3;
+      small {
+        color: $colour-highlight-6;
+      }
+    }
+  }
+
+  .stat-wrapper {
+    h3 {
+      font-size: 1.1em;
+      color: $colour-highlight-6;
+      padding-left: 10px;
+      small {
+        color: $colour-highlight-3;
+      }
+    }
+  }
+}
+
+.damage-marker {
+  .floating-number {
+    text-shadow: 2px 2px black;
+    bottom: 0px;
+    font-size: 2em;
+    font-weight: 800;
+    z-index: 3;
+    text-align:center;
+  }
+
+  .floating-number-normal {
+    color: #0087bd;
+  }
+
+  .floating-number-headshot {
+    color: #ee7f2d;
+  }
+
+  .floating-number-kill {
+    color: #a50021;
+  }
+
+  p {
+      font-size: 0.9em;
+      color: black;
+      text-align: center;
+  }
+}
+
+.text-box-wrapper {
+    background-color:$colour-highlight-1;
+    border: 1px solid $colour-highlight-6;
+    padding: 1px 3px;
+    color: $colour-highlight-9;
+}

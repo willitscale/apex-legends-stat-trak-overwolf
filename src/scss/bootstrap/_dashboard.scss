@@ -1,0 +1,63 @@
+.map-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    #map-icon {
+        position: absolute;
+        width: 20px;
+        display: none;
+    }
+}
+
+.dashboard-stats {
+    z-index: 10000;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+
+    h3 {
+        font-size:1.3em;
+        color: $highlight-colour;
+        small {
+            padding-right: 5px;
+            color: white;
+        }
+    }
+}
+
+.progress-wrapper {
+    margin-top:40px;
+    .progress {
+        position: relative;
+        overflow: visible !important;
+        background-color: $colour-highlight-3;
+
+        .progress-dash,
+        .progress-spot {
+            position: absolute;
+        }
+
+        .progress-spot {
+            margin-top:-10px;
+            z-index:1;
+            height:40px;
+            width:40px;
+            border-radius:25px;
+            background-color: $colour-highlight-3;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .progress-dash {
+            z-index:1;
+            height:40px;
+            width: 2px;
+            margin-top: -10px;
+            background-color: $colour-highlight-3;
+        }
+    }
+}
+
+.chart-split {
+    margin-top:10px;
+}

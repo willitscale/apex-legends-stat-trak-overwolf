@@ -1,0 +1,71 @@
+.download-wrapper {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 430px;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px $third;
+    background-color: $third;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: $third;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $second;
+  }
+
+  #download-panel {
+    .match {
+      display: flex;
+      flex-flow: row wrap;
+      background-color: $fourth;
+
+      div {
+        margin: 5px 0px;
+      }
+
+      .match-id {
+        width: 55%;
+        color: $colour-highlight-5;
+        small {
+          color: $colour-highlight-7;
+          font-size: 0.9em;
+        }
+      }
+
+      .match-state {
+        text-align: center;
+        margin-left:5%;
+        width: 40%;
+        border: 1px solid $colour-highlight-7;
+      }
+
+      .download-progress {
+        background-color: $colour-highlight-9;
+      }
+
+      .process-progress {
+        background-color: $colour-highlight-9;
+      }
+
+      .completed {
+        background-color: $success;
+      }
+
+      .queued {
+        background-color: $warning;
+      }
+
+      .processing {
+        background-color: $primary;
+      }
+
+      .downloading {
+        background-color: $danger;
+      }
+    }
+  }
+}

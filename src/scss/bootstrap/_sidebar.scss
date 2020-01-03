@@ -1,0 +1,44 @@
+#sidebar {
+  min-width: 150px;
+  max-width: 150px;
+  height: 100vh;
+  position: fixed;
+  padding-top: 20px;
+  left: 0;
+  z-index: 9999;
+  background-color: $second;
+  display: flex;
+
+  ul {
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: $colour-highlight-2;
+    font-size: 16pt;
+    margin: auto;
+    padding: 0px;
+
+    li {
+      min-width: 150px;
+      max-width: 150px;
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+      margin: 0px 0px 1px 0px;
+      &:hover,
+      &.selected {
+        background-color: $first;
+      }
+
+      p {
+        margin: 0.5rem 0 0.5rem 0;
+
+        i {
+          color: $highlight-colour;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+.logged-in {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    padding: 10px;
+    color: black;
+    font-size: 1.2em;
+  
+    &.logged-in-success {
+      background-color: $success;
+    }
+  
+    &.logged-in-pending {
+      background-color: $warning;
+    }
+  
+    &.logged-in-failure {
+      background-color: $danger;
+    }
+  
+    &.logged-in-initialising {
+      background-color: $info;
+    }
+  
+    span {
+      color: white;
+    }
+  }

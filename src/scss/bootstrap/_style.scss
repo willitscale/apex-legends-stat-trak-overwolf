@@ -1,0 +1,70 @@
+body {
+  background-color: $first;
+  width: 100%;
+  height: 100vh;
+  user-select: none;
+  cursor: default;
+  font-family: Teko, Roboto, sans-serif;
+  overflow: hidden;
+}
+
+#content {
+  color: #444;
+  padding-top: 40px;
+  padding-left: 150px;
+  height: 100vh;
+
+  .container-fluid {
+    padding: 0 20px;
+    font-size: 1.3em;
+    .row {
+      > div {
+        margin-bottom: 15px;
+        > div {
+          background-color: $fourth;
+          min-height: 20vh;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+p {
+  color: $colour-highlight-5;
+
+  small {
+    color: $colour-highlight-7;
+  }
+
+  .small-block {
+    display: block;
+    color: $colour-highlight-6;
+  }
+
+  .small-title-block {
+    display: block;
+    strong {
+      color: $colour-highlight-9;
+    }
+  }
+}
+
+h4 {
+  color: $colour-highlight-1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#app-version {
+  z-index: 5;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: $colour-highlight-6;
+  small {
+    color: $white;
+  }
+}
